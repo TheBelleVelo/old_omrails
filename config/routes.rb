@@ -1,6 +1,10 @@
 Omrails::Application.routes.draw do
+
+  root :to => 'pages#home'
+  get 'about' => 'pages#about'
+
   # The priority is based upon order of creation:
-  # first created -> highest priority.
+  # first created -> highest priority.es
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

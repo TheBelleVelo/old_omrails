@@ -1,0 +1,31 @@
+/* You could change the font here if you wanted to */
+/* $baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen); */
+
+$btnPrimaryBackground: green;
+$navbarBackgroundHighLight: white;
+$navbarBackgound: white;
+
+@import 'bootstrap';
+
+/* put padding in so that body is not hidden behind top menu bar */
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+
+/* remove shading from the default bootstrap top menu bar */
+.navbar-inner {
+	@include box-shadow(none !important);
+	border: 0;
+}
+/* define parameters for the footer */
+.footer {
+	margin-top: 50px;
+	color: $grayLight;
+	a {
+		color: $gray;
+	}
+}
